@@ -34,6 +34,10 @@ public class Book {
     )
     private Set<Author> authors = new HashSet<>();
 
+    public Book() {
+        // default no-arg constructor
+    }
+
     public Book(final String title, final String isbn, final Publisher publisher) {
         this.title = title;
         this.isbn = isbn;

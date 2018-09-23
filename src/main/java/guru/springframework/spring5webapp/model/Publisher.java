@@ -17,6 +17,10 @@ public class Publisher {
 
     private String address;
 
+    public Publisher() {
+        // default no-arg constructor
+    }
+
     public Publisher(final String name, final String address) {
         this.name = name;
         this.address = address;
