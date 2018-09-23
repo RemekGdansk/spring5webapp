@@ -23,6 +23,10 @@ public class Author {
     @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 
+    public Author() {
+        // default no-arg constructor
+    }
+
     public Author(final String firstName, final String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
